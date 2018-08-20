@@ -14,7 +14,7 @@ function apiRequest(searchTerm, callback) {
 function renderHTML(result) {
   return `
     <div class='result-video'>
-      <a href="${VIDEO_URL}${result.id.videoId}" target="_blank"><img src="${result.snippet.thumbnails.default.url}" alt='${result.snippet.title}'></a>
+      <a href="${VIDEO_URL}${result.id.videoId}" target="_blank"><img src="${result.snippet.thumbnails.default.url}" alt=''></a>
       <br>
       <a class="js-result-name" href="${VIDEO_URL}${result.id.videoId}" target="_blank">${result.snippet.title}</a>
     </div>
